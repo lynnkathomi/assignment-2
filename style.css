@@ -1,0 +1,90 @@
+#header {
+    position: fixed;
+    width: 1100px;
+    top: 0;
+    right: 10px; /* Added 'px' after 10 */
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-colour);
+    box-shadow: 0 8px 11px rgba(7, 151, 149, 0.15);
+    padding: 20px 100px;
+    transition: 0.5s;
+    z-index: 999; /* You may want to remove one of the z-index properties if not needed */
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+}
+
+#profile img {
+    width: 40px;
+    object-fit: cover;
+    object-position: cover;
+    border-radius: 70%;
+}
+
+#profile span {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(8, 145, 145);
+    column-gap: 0.5rem;
+}
+
+#logo .bx { /* Added a period before 'bx' to indicate it's a class */
+    font-size: 30px;
+    color: black;
+}
+
+#navbar {
+    display: flex;
+    column-gap: 3rem;
+}
+
+#navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-colour);
+    padding: 0.5rem 1rem;
+    background-color: mintcream;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: mediumaquamarine;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: mediumaquamarine;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
